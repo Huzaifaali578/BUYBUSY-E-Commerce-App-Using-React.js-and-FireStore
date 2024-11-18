@@ -1,0 +1,129 @@
+:root {
+    --primary-gradient: linear-gradient(to right, #4CAF50 0%, #81C784 51%, #4CAF50 100%);
+    --secondary-gradient: linear-gradient(to right, #FFC107 0%, #FFD54F 51%, #FFC107 100%);
+    --text-color-light: #FFFFFF;
+    --text-color-dark: #333333;
+    --nav-hover-color: #FFEB3B;
+    --cart-indicator-bg: #E53935; /* Softer red for cart indicator */
+    --shadow-color: rgba(0, 0, 0, 0.15);
+}
+
+.navbarContainer {
+    width: 100%;
+    height: 60px;
+    background: var(--primary-gradient);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+    font-weight: 600;
+    color: var(--text-color-light);
+    position: sticky;
+    top: 0;
+    z-index: 99;
+    box-shadow: 0px 4px 6px var(--shadow-color);
+}
+
+.appName {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: var(--text-color-light);
+    margin-left: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.appName a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.appName a:hover {
+    color: var(--nav-hover-color);
+    text-shadow: 0px 0px 5px var(--nav-hover-color);
+}
+
+.navLinks {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    gap: 15px; /* Spacing between links */
+}
+
+.navLinks a {
+    text-decoration: none; 
+    color: inherit;        
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.navLinks a:hover {
+    color: var(--nav-hover-color); 
+    transform: translateY(-2px); /* Subtle lift effect */
+}
+
+.navLinks span {
+    padding: 5px 10px;
+    background: var(--secondary-gradient);
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--text-color-dark);
+    transition: background 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+.navLinks span:hover {
+    background: #FFD54F;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 6px var(--shadow-color);
+}
+
+/* Cart Item Indicator */
+.cartItemIndicator {
+    color: black;
+    font-size: 1.3rem;
+    font-weight: bold;
+    height: 28px;
+    position: relative;
+    right: 23px;
+}
+
+.cartItemIndicator:hover {
+    transform: scale(1.2); /* Emphasize on hover */
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .navbarContainer {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 15px;
+    }
+
+    .appName {
+        margin: 10px 0;
+        font-size: 1.4rem;
+    }
+
+    .navLinks {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .navLinks span {
+        font-size: 0.9rem;
+        padding: 5px 8px;
+    }
+
+    .cartItemIndicator {
+        width: 24px;
+        height: 24px;
+        font-size: 0.8rem;
+    }
+}

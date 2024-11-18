@@ -1,0 +1,105 @@
+.mainContainer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f9fa; /* Light background for better readability */
+}
+
+.mainContainer > div {
+    width: 100%;
+    margin: 10px 0;
+    padding: 15px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #ffffff 0%, #dfe9f3 100%);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+/* .mainContainer > div:hover {
+    transform: translateY(-5px); 
+} */
+
+.header {
+    height: 60px;
+    background: linear-gradient(90deg, #00c9ff 0%, #92fe9d 100%);
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: black;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.header small, .cartDetails {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.cartDetails {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cartDetails > div {
+    margin: 10px;
+    padding: 5px 15px;
+    text-align: center;
+    background: linear-gradient(135deg, #e3ffe7 0%, #d9e7ff 100%);
+    border-radius: 6px;
+    font-size: 1rem;
+    font-weight: 500;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cartDetails button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 6px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.cartDetails button:hover {
+    opacity: 0.9;
+}
+
+.removeAll {
+    background-color: #ff6f61; /* Bright red tone for attention */
+    font-size: 1rem;
+}
+
+.removeAll:hover {
+    background-color: #e63946;
+}
+
+.purchaseAll {
+    background-color: #5e60ce; /* Bold violet for purchase */
+    font-size: 1rem;
+}
+
+.purchaseAll:hover {
+    background-color: #3f37c9;
+}
+
+.itemContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+}
+

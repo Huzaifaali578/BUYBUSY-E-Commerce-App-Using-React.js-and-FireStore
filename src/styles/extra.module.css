@@ -1,0 +1,48 @@
+.quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #333;
+    gap: 10px;
+}
+
+.minus, .plus {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #e63946; /* Red background */
+    border-radius: 50%;
+    padding: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.minus:hover, .plus:hover {
+    background-color: #d62828; /* Darker red on hover */
+    transform: scale(1.1); /* Slightly enlarges the icon on hover */
+}
+
+.minus:active, .plus:active {
+    background-color: #c81f1f; /* Even darker red on click */
+}
+
+.quantity span {
+    font-size: 1.5rem; /* Larger font for the quantity */
+    color: #333;
+    font-weight: 600;
+}
+
+.quantity span:focus {
+    outline: none; /* Removes default focus outline */
+}
+
+.FaMinusCircle, .FaPlusSquare {
+    font-size: 1.5rem;
+    color: white;
+}
+
+.FaMinusCircle:hover, .FaPlusSquare:hover {
+    color: #fff;
+}

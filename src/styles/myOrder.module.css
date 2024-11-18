@@ -1,0 +1,98 @@
+/* My Order Section */
+.orderHeading {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #3a7bd5; /* Matches the previous gradient palette */
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(58, 123, 213, 0.5);
+}
+
+/* No Orders Section */
+.noOrders {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #e63946;
+    margin: 20px 0;
+}
+
+.noOrders a {
+    color: #1e7c60;
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.noOrders a:hover {
+    color: #4cacbb;
+    text-decoration: underline;
+}
+
+/* Order List Container */
+.orderListContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Order Details */
+.orderTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 10px 0;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.orderTable thead {
+    background-color: #3a7bd5; /* Header background color */
+    color: white;
+}
+
+.orderTable th, 
+.orderTable td {
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.orderTable tbody tr:hover {
+    background-color: #f1f1f1;
+    transition: background-color 0.3s ease;
+}
+
+.orderTable tfoot {
+    font-weight: bold;
+    background-color: #eef1f5;
+    color: #333;
+}
+
+.orderTable tfoot td {
+    padding: 10px;
+}
+
+/* Button Link Styling */
+.orderTable a {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: white;
+    background: linear-gradient(95deg, rgba(251, 138, 123, 1) 0%, rgba(248, 174, 46, 1) 100%);
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.orderTable a:hover {
+    background: linear-gradient(95deg, rgba(248, 174, 46, 1) 0%, rgba(251, 138, 123, 1) 100%);
+    transform: scale(1.05);
+}

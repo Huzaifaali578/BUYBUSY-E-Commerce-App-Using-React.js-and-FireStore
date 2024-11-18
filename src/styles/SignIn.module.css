@@ -1,0 +1,80 @@
+/* Main Container for SignIn/SignUp */
+.mainContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+
+/* Input Form Styling */
+.inputForm {
+    width: 350px;
+    padding: 20px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    font-family: 'Arial', sans-serif;
+}
+
+/* Input Fields */
+.inputForm input {
+    width: 90%;
+    height: 40px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    padding: 5px;
+    border: 1px solid #3a7bd5; /* Matches navbar gradient colors */
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.inputForm input:focus {
+    border-color: #00d2ff; /* Active focus color */
+    box-shadow: 0px 0px 5px rgba(0, 210, 255, 0.5);
+}
+
+/* Submit Button */
+.inputForm button {
+    width: 95%;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background-image: linear-gradient(95deg, #4CAF50 0%, #81C784 100%);
+    transition: transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.inputForm button:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(76, 175, 80, 0.5);
+}
+
+/* Anchor Links */
+.inputForm a {
+    display: block;
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: #3a7bd5; /* Consistent with gradient theme */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.inputForm a:hover {
+    color: #00d2ff; /* Matches the hover effect of other elements */
+    text-decoration: underline;
+}
+
+/* Form Heading */
+.inputForm h2 {
+    font-size: 1.8rem;
+    color: #3a7bd5;
+    margin-bottom: 20px;
+    text-shadow: 1px 1px 5px rgba(58, 123, 213, 0.3);
+}
