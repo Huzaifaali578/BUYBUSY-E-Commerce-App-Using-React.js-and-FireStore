@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from '../styles/home.module.css';
-import { useProductContext } from '../productContext';
+import styles from '../../styles/home.module.css';
+import { useProductContext } from '../../productContext';
 
 export default function ItamCard(props) {
     const { name, price, image, category } = props.item;

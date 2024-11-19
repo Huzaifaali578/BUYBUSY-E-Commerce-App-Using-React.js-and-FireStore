@@ -1,7 +1,7 @@
 import { NavLink, Outlet } from "react-router-dom";
-import styles from "../styles/navbar.module.css";
-import { useAuthValue } from "../authContext";
-import { useProductContext } from "../productContext";
+import styles from "../../styles/navbar.module.css";
+import { useAuthValue } from "../../authContext";
+import { useProductContext } from "../../productContext";
 
 
 export default function Navbar() {

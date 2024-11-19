@@ -1,13 +1,13 @@
 # ByBusy E-Commerce App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository demonstrates how to implement authentication in a React application by managing user session data with localStorage.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
+<ul>
+<li>User authentication and session management using localStorage.</li>
+<li> Persistent login state across page refreshes.</li>
+<li> Add-to-cart functionality with real-time updates.</li>
+<li> Dynamic cart total and item count.</li>
+<li> Fully functional user registration and login system.</li>
+</ul>

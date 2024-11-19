@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/home.module.css';
+import styles from '../../styles/home.module.css';
 
 export default function FilterBar(props) {
   const { price, setPrice, setCategory, category } = props; // Fixed prop name (Category -> category)

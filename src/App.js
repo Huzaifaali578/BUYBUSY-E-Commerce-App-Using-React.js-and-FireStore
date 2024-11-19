@@ -1,13 +1,13 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import Navbar from "./component/navbar";
-import SignIn from "./component/SignIn";
-import SignUp from "./component/SignUp";
+import Navbar from "./component/navbar/navbar";
+import SignIn from "./component/signIn-signup/SignIn";
+import SignUp from "./component/signIn-signup/SignUp";
 import { AuthContext } from "./authContext"; // Import AuthContext
-import Home from "./component/home";
+import Home from "./component/home/home";
 import ProductContext from "./productContext";
-import MyOrder from "./component/myOrder";
-import Cart from "./component/cart";
-import Error from "./component/error";
+import MyOrder from "./component/myOrder/myOrder";
+import Cart from "./component/cart/cart";
+import Error from "./component/others/error";
 
 function App() {
   const router = createBrowserRouter([

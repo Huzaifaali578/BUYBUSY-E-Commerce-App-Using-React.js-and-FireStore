@@ -1,9 +1,9 @@
 import React from 'react';
-import { useProductContext } from '../productContext';
-import styles from '../styles/home.module.css';
+import { useProductContext } from '../../productContext';
+import styles from '../../styles/home.module.css';
 import { FaMinusCircle } from "react-icons/fa";
 import { FaPlusSquare } from "react-icons/fa";
-import extraCSS from '../styles/extra.module.css';
+import extraCSS from '../../styles/extra.module.css';
 
 export default function CartItems(props) {
     const { increaseQuantity, decreaseQuantity, removeItemFromCart } = useProductContext();

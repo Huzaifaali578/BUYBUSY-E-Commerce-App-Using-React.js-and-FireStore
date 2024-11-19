@@ -1,6 +1,6 @@
 import React from 'react';
-import styles from '../styles/home.module.css';
-import { useProductContext } from '../productContext';
+import styles from '../../styles/home.module.css';
+import { useProductContext } from '../../productContext';
 import ItemCard from './itemCard'; // Corrected typo in the component name
 
 export default function MainContent(props) {

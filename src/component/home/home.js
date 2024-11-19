@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
-import Loader from './loader';
-import styles from '../styles/home.module.css';
+import Loader from '../others/loader';
+import styles from '../../styles/home.module.css';
 import FilterBar from './filterBar';
 import MainContent from './mainContent';
 

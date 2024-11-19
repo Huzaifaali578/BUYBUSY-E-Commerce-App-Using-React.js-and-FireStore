@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
-import styles from "../styles/SignIn.module.css";
+import styles from "../../styles/SignIn.module.css";
 import { NavLink, useNavigate } from 'react-router-dom';
-import { useAuthValue } from '../authContext';
+import { useAuthValue } from '../../authContext';
 
 
 export default function SignIn() {

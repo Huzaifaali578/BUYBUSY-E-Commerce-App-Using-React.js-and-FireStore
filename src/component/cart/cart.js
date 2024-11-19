@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import { useProductContext } from "../productContext";
-import { useAuthValue } from "../authContext";
+import { useProductContext } from "../../productContext";
+import { useAuthValue } from "../../authContext";
 import { useNavigate } from "react-router-dom";
-import styles from "../styles/cart.module.css";
-import Loader from "./loader";
+import styles from "../../styles/cart.module.css";
+import Loader from "../others/loader";
 import CartItems from "./cartItems";
 import { toast } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/myOrder.module.css';
+import styles from '../../styles/myOrder.module.css';
 
 export default function OrderDetails(props) {
     const { date, list, amount } = props.order;
